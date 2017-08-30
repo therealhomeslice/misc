@@ -1,0 +1,11 @@
+06:27:25 **** Build of configuration Debug for project Lab5 ****
+make all 
+make -C /lib/modules/\3.10.0-514.el7.x86_64/build M=/home/student/eclipse-workspace/Lab5 modules
+make[1]: Entering directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+rm: cannot remove ‘/home/student/eclipse-workspace/Lab5/.tmp_versions/sleep_killer.mod’: Permission denied
+make[1]: Leaving directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+make[1]: *** [crmodverdir] Error 1
+make: *** [all] Error 2
+
+06:27:28 Build Finished (took 3s.135ms)
+

@@ -1,0 +1,11 @@
+08:43:18 **** Build of configuration Debug for project Lab13 ****
+make all 
+make -C /lib/modules/\3.10.0-514.el7.x86_64/build M=/home/student/eclipse-workspace/Lab13 modules
+make[1]: Entering directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+rm: cannot remove ‘/home/student/eclipse-workspace/Lab13/.tmp_versions/sleepcwd.mod’: Permission denied
+make[1]: Leaving directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+make[1]: *** [crmodverdir] Error 1
+make: *** [all] Error 2
+
+08:43:21 Build Finished (took 2s.632ms)
+

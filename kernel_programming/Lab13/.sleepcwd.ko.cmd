@@ -1,0 +1,1 @@
+cmd_/home/student/eclipse-workspace/Lab13/sleepcwd.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/student/eclipse-workspace/Lab13/sleepcwd.ko /home/student/eclipse-workspace/Lab13/sleepcwd.o /home/student/eclipse-workspace/Lab13/sleepcwd.mod.o

@@ -1,0 +1,24 @@
+05:53:32 **** Build of configuration Debug for project Lab12 ****
+make all 
+make -C /lib/modules/\3.10.0-514.el7.x86_64/build M=/home/student/eclipse-workspace/Lab12 modules
+make[1]: Entering directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+  CC [M]  /home/student/eclipse-workspace/Lab12/unlinker.o
+/home/student/eclipse-workspace/Lab12/unlinker.c: In function ‘init_module’:
+/home/student/eclipse-workspace/Lab12/unlinker.c:60:16: warning: assignment makes pointer from integer without a cast [enabled by default]
+  original_call = sys_call_table[__NR_unlink];  //store original
+                ^
+/home/student/eclipse-workspace/Lab12/unlinker.c:61:30: warning: assignment makes integer from pointer without a cast [enabled by default]
+  sys_call_table[__NR_unlink] = my_sys_unlink;  //replace it
+                              ^
+/home/student/eclipse-workspace/Lab12/unlinker.c: In function ‘cleanup_module’:
+/home/student/eclipse-workspace/Lab12/unlinker.c:68:32: warning: assignment makes integer from pointer without a cast [enabled by default]
+    sys_call_table[__NR_unlink] = original_call;
+                                ^
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/student/eclipse-workspace/Lab12/unlinker.mod.o
+  LD [M]  /home/student/eclipse-workspace/Lab12/unlinker.ko
+make[1]: Leaving directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+
+05:53:39 Build Finished (took 7s.725ms)
+

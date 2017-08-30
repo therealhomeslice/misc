@@ -1,0 +1,1 @@
+cmd_/home/student/eclipse-workspace/Lab10/extimer.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/student/eclipse-workspace/Lab10/extimer.ko /home/student/eclipse-workspace/Lab10/extimer.o /home/student/eclipse-workspace/Lab10/extimer.mod.o

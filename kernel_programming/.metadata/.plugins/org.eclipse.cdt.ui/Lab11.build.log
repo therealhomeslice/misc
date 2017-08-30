@@ -1,0 +1,24 @@
+12:26:28 **** Build of configuration Debug for project Lab11 ****
+make all 
+make -C /lib/modules/\3.10.0-514.el7.x86_64/build M=/home/student/eclipse-workspace/Lab11 modules
+make[1]: Entering directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+  CC [M]  /home/student/eclipse-workspace/Lab11/signalex.o
+/home/student/eclipse-workspace/Lab11/signalex.c: In function ‘thread’:
+/home/student/eclipse-workspace/Lab11/signalex.c:38:16: warning: unused variable ‘delay’ [-Wunused-variable]
+  unsigned long delay = jiffies + 5*HZ; /* 5 second delay */
+                ^
+/home/student/eclipse-workspace/Lab11/signalex.c:37:6: warning: unused variable ‘last_pid’ [-Wunused-variable]
+  int last_pid = 0;
+      ^
+/home/student/eclipse-workspace/Lab11/signalex.c:50:18: warning: ‘info’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+     send_sig_info(SIGABRT, info, task);
+                  ^
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/student/eclipse-workspace/Lab11/signalex.mod.o
+  LD [M]  /home/student/eclipse-workspace/Lab11/signalex.ko
+make[1]: Leaving directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+gcc -o siguser siguser.c
+
+12:26:33 Build Finished (took 4s.487ms)
+

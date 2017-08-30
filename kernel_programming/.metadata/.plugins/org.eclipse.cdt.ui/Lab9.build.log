@@ -1,0 +1,13 @@
+10:56:17 **** Build of configuration Debug for project Lab9 ****
+make all 
+make -C /lib/modules/\3.10.0-514.el7.x86_64/build M=/home/student/eclipse-workspace/Lab9 modules
+make[1]: Entering directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+  CC [M]  /home/student/eclipse-workspace/Lab9/incrementer.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/student/eclipse-workspace/Lab9/incrementer.mod.o
+  LD [M]  /home/student/eclipse-workspace/Lab9/incrementer.ko
+make[1]: Leaving directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+
+10:56:21 Build Finished (took 3s.855ms)
+

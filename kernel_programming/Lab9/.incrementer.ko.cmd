@@ -1,0 +1,1 @@
+cmd_/home/student/eclipse-workspace/Lab9/incrementer.ko := ld -r -m elf_x86_64 -T ./scripts/module-common.lds --build-id  -o /home/student/eclipse-workspace/Lab9/incrementer.ko /home/student/eclipse-workspace/Lab9/incrementer.o /home/student/eclipse-workspace/Lab9/incrementer.mod.o

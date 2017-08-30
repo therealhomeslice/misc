@@ -1,0 +1,13 @@
+06:48:41 **** Build of configuration Debug for project Lab4 ****
+make all 
+make -C /lib/modules/3.10.0-514.el7.x86_64/build M=/home/student/eclipse-workspace/Lab4 modules
+make[1]: Entering directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+  CC [M]  /home/student/eclipse-workspace/Lab4/lab4.o
+  Building modules, stage 2.
+  MODPOST 1 modules
+  CC      /home/student/eclipse-workspace/Lab4/lab4.mod.o
+  LD [M]  /home/student/eclipse-workspace/Lab4/lab4.ko
+make[1]: Leaving directory `/usr/src/kernels/3.10.0-514.el7.x86_64'
+
+06:48:46 Build Finished (took 5s.269ms)
+
